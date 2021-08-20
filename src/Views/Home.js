@@ -31,6 +31,7 @@ function Home() {
 
   return (
     <div className="list-container">
+      <div>first page</div>
       <ul>{content}</ul>
     </div>
   );
