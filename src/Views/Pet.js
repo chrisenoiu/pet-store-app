@@ -53,7 +53,7 @@ function Product() {
       <div className="error-content">
         <div>The information isn't available!</div>
         <div>
-          <a href="/">
+          <a href="/pet-store-app/">
             <button className="back-btn">Pets</button>
           </a>
         </div>

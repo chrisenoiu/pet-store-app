@@ -5,7 +5,7 @@ function PetCard(props) {
     <li>
       <div className="pet-card">
         <div className="pet-name">
-          <a href={"pet/" + props.id}>
+          <a href={"/pet-store-app/pet/" + props.id}>
             <div>{props.name}</div>
           </a>
         </div>
