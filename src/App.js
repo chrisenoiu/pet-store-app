@@ -11,10 +11,10 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/pet-store-app/">
             <Home />
           </Route>
-          <Route exact path="/pet/:id">
+          <Route exact path="/pet-store-app/:id">
             <Pet />
           </Route>
         </Switch>
