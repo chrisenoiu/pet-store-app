@@ -22,7 +22,7 @@ function Home() {
     content = (
       <div>
         <div>No requests found! Try again.</div>
-        <a href="/pet-store-app">
+        <a href="/">
           <button className="back-btn">Refresh</button>
         </a>
       </div>

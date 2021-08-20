@@ -8,13 +8,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="content">
-      <Router>
+      <Router path={process.env.PUBLIC_URL + '/'}>
         <Header />
         <Switch>
-          <Route exact path="/pet-store-app/home">
+          <Route path="/">
             <Home />
           </Route>
-          <Route exact path="/pet-store-app/pet/:id">
+          <Route path="/pet/:id">
             <Pet />
           </Route>
         </Switch>
