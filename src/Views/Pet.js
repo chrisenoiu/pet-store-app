@@ -33,9 +33,9 @@ function Product() {
           <div className="sub-title">TAGS</div>
 
           <div className="pet-tags-list">
-            {pet.tags.map((data, key) => {
+            {pet.tags.map((data, index) => {
               return (
-                <div className="pet-tag" key={key}>
+                <div className="pet-tag" key={index}>
                   {data.name}
                 </div>
               );

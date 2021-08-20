@@ -15,8 +15,8 @@ function Home() {
   }, [url]);
 
   if (pets) {
-    content = pets.map((key) => {
-      return <PetCard name={key.name} id={key.id}></PetCard>;
+    content = pets.map((data, index) => {
+      return <PetCard key={index} name={data.name} id={data.id}></PetCard>;
     });
   } else {
     content = (
