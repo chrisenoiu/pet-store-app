@@ -1,3 +1,10 @@
+:root {
+  --primary: #6fcf97;
+  --secondary: #201835;
+  --light: #f2f2f2;
+  --dark: #828282;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,20 +16,71 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+.primary-bg {
+  background-color: var(--primary);
+}
+.secondary-bg {
+  background-color: var(--secondary);
+}
+.primary-c {
+  color: var(--primary);
+}
+.secondary-c {
+  color: var(--secondary);
+}
+.light-c {
+  color: var(--light);
+}
+.light-bg {
+  background-color: var(--light);
+}
+.dark-c {
+  color: var(--dark);
+}
+.dark-bg {
+  background-color: var(--dark);
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #f2f2f2;
 }
 
 li {
   margin-top: 5px;
-  color: #828282;
   border-radius: 15px;
 }
 
 ul {
   list-style-type: none;
+}
+
+.m25 {
+  margin: 25px 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  text-align: center;
 }
 
 .content {
@@ -34,15 +92,8 @@ ul {
 
 .header {
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #6fcf97;
 }
-.sub-title {
-  font-weight: bold;
-  text-align: center;
-  color: #828282;
-}
+
 .list-container {
   text-align: center;
   margin-top: 16px;
@@ -51,64 +102,36 @@ ul {
 .pet-card {
   display: flex;
   justify-content: space-between;
-  background-color: #f2f2f2;
   border-radius: 28px;
   padding: 2px;
+  background-color: var(--light);
 }
 
 .pet-status {
-  color: #6fcf97;
   margin-right: 20px;
   line-height: 1.7;
+  color: var(--primary);
 }
 
 .pet-content-header {
-  background-color: #f2f2f2;
   margin-top: 5px;
-  color: #828282;
   border-radius: 15px;
   width: 280px;
+  background-color: var(--light);
 }
 
 .pet-content-id {
-  color: #6fcf97;
   padding: 5px;
   text-align: center;
+  color: var(--secondary);
 }
 
 .pet-content-name {
-  color: #f2f2f2;
-  background-color: #6fcf97;
   padding: 5px;
   text-align: center;
   border-radius: 15px 15px 0 0;
-}
-
-.btn {
-  height: 28px;
-  border-radius:16px;
-  border: none;
-  background-color: #6fcf97;
-  color: #f2f2f2;
-  font-weight: bold;
-  padding: 6px 32px;
-  cursor: pointer;
-}
-.btn:hover {
-  transition: 250ms;
-  background-color: #5aaa7b;
-}
-
-.m25 {
-  margin: 25px 0;
-}
-
-.pet-info-txt {
-  background-color: #6fcf97;
-  width: 280px;
-  text-align: center;
-  line-height: 2;
-  color: #f2f2f2;
+  color: var(--light);
+  background-color: var(--primary);
 }
 
 .pet-info-img {
@@ -118,13 +141,24 @@ ul {
   background-image: url("./Images/placeHolder.png");
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.pet-info-txt {
+  width: 280px;
+  text-align: center;
+  line-height: 2;
+  background-color: var(--primary);
+  color: var(--light);
 }
 
-.footer {
-  text-align: center;
-  margin-top: 12px;
+.btn {
+  height: 28px;
+  border-radius: 16px;
+  border: none;
+  font-weight: bold;
+  padding: 6px 32px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: 250ms;
+  background-color: var(--secondary);
 }

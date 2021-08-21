@@ -29,13 +29,13 @@ function Product() {
           </div>
         </div>
 
-        <div className="column">
-          <div className="sub-title">TAGS</div>
+        <div className="column dark-c">
+          <h2>About</h2>
 
           <div>
             {pet.tags.map((data, index) => {
               return (
-                <div className="pet-tag" key={index}>
+                <div className="dark-c" key={index}>
                   {data.name}
                 </div>
               );
@@ -44,17 +44,17 @@ function Product() {
         </div>
 
         <a href="/">
-          <button className="btn m25">Back</button>
+          <button className="btn m25 primary-bg light-c">Back</button>
         </a>
       </div>
     );
   } else {
     content = (
-      <div className="m25 column">
+      <div className="m25 column secondary-c">
         <div>The information isn't available!</div>
         <div>
           <a href="/">
-            <button className="btn m25">Back</button>
+            <button className="btn m25 primary-bg light-c">Back</button>
           </a>
         </div>
       </div>

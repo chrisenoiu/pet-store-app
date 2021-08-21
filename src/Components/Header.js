@@ -7,7 +7,7 @@ function Header() {
           trigger="loop"
           colors="primary:#121331,secondary:#08a88a"
         ></lord-icon>
-        Pet Store App
+        <h1 className="primary-c">Pet Store App</h1>
       </div>
     </div>
   );
