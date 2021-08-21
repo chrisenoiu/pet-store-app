@@ -44,19 +44,17 @@ function Product() {
         </div>
 
         <a href="/">
-          <button className="btn m25 primary-bg light-c">Back</button>
+          <button className="btn m25">Back</button>
         </a>
       </div>
     );
   } else {
     content = (
       <div className="m25 column secondary-c">
-        <div>The information isn't available!</div>
-        <div>
-          <a href="/">
-            <button className="btn m25 primary-bg light-c">Back</button>
-          </a>
-        </div>
+        <p>The information isn't available!</p>
+        <a href="/">
+          <button className="btn m25">Back</button>
+        </a>
       </div>
     );
   }

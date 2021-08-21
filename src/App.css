@@ -81,10 +81,12 @@ ul {
 
 .footer {
   text-align: center;
+  color: var(--dark);
+  margin: 10px 0;
 }
 
 .content {
-  margin-top: 50px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   width: 360px;
@@ -92,6 +94,7 @@ ul {
 
 .header {
   text-align: center;
+  margin: 20px 0;
 }
 
 .list-container {
@@ -156,6 +159,8 @@ ul {
   font-weight: bold;
   padding: 6px 32px;
   cursor: pointer;
+  background-color: var(--primary);
+  color: var(--light);
 }
 
 .btn:hover {

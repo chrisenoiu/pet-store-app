@@ -1,5 +1,5 @@
 function Footer() {
-  return <p className="footer secondary-c">Pet Store App - 1/2</p>;
+  return <p className="footer">Pet Store App - 1/2</p>;
 }
 
 export default Footer;

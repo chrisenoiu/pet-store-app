@@ -10,16 +10,14 @@ function App() {
     <div className="content">
       <Router>
         <Header />
-        <div>
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/pet/:id">
-              <Pet />
-            </Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/pet/:id">
+            <Pet />
+          </Route>
+        </Switch>
         <Footer />
       </Router>
     </div>

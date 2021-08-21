@@ -23,7 +23,7 @@ function Home() {
       <div>
         <p>No requests found! Try again.</p>
         <a href="/">
-          <button className="btn m25 primary-bg light-c">Refresh</button>
+          <button className="btn m25">Refresh</button>
         </a>
       </div>
     );
