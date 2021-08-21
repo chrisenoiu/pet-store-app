@@ -4,9 +4,9 @@ function PetCard(props) {
   return (
     <li>
       <div className="pet-card">
-        <div className="pet-name">
+        <div>
           <a href={"/pet/" + props.id}>
-            <div>{props.name}</div>
+            <button className="btn">{props.name}</button>
           </a>
         </div>
         <div className="pet-status">Available</div>

@@ -23,7 +23,7 @@ function Home() {
       <div>
         <div>No requests found! Try again.</div>
         <a href="/">
-          <button className="back-btn">Refresh</button>
+          <button className="btn m25">Refresh</button>
         </a>
       </div>
     );
@@ -31,7 +31,7 @@ function Home() {
 
   return (
     <div className="list-container">
-      <div>Pet List</div>
+      <div className="m25">Pet List</div>
       <ul>{content}</ul>
     </div>
   );
