@@ -8,16 +8,18 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="content">
-      <Router path={process.env.PUBLIC_URL + '/'}>
+      <Router>
         <Header />
-        <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route path="/pet/:id">
-            <Pet />
-          </Route>
-        </Switch>
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/pet/:id">
+              <Pet />
+            </Route>
+          </Switch>
+        </div>
         <Footer />
       </Router>
     </div>
